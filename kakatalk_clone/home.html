@@ -7,6 +7,11 @@
     </title>
     <link href="styles.css" rel="stylesheet"/>
     <style>
+      * {
+        border: 2px solid black;
+      }
+
+
       h1 {
         color: rgb(100, 130, 238);
         font-weight: 200;
@@ -41,7 +46,7 @@
         height: 50px;
       }
       #fourth {
-        background-color: black;
+        background-color: blue;
         width: 25px;
         height: 25px;
       }
@@ -49,7 +54,25 @@
       html {
         background-color: red;
       }
-      
+      .btn {
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+      .teal {
+        background-color: teal;
+      }
+      .tomato {
+        background-color: tomato;
+        color: white;
+      }
+
+      .dp {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-color: teal;
+      }
+
     
     </style>
     <meta charset="utf-8" />
@@ -62,19 +85,21 @@
       <div id="second">
         <div id="third">
           <div id="fourth">
+            <span>hello</span>
           </div>
         </div>
-      </div>
+      </div> 
     </div>
-    
-      
-    <span>
-      hello
-    </span>
 
-    <span>
-      hello
-    </span>
+    <div class="dp"></div>
+    <div class="dp"></div>
+    <div class="dp"></div>
+    
+    <span class="btn teal">hello</span>
+    <span class="btn tomato">hello</span>
+    <span class="btn teal">hello</span>
+    <span class="btn tomato">hello</span>
+    <span class="btn tomato">hello</span>
 
     <h1>YAFILX</h1>
     <p>My name is <abbr title="Park Hyung Woo">PHW</abbr></p>
