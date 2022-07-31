@@ -86,15 +86,35 @@
         height: 50px;
         background-color: teal;
       }
+      
+     div:first-child {
+      background-color: brown;
+     }
 
-    
+     div:last-child {
+      background-color: yellow;
+     }
+
+     span {
+      background-color: greenyellow;
+     }
+
+     span:nth-child(5), 
+     span:nth-child(7),
+     span:nth-child(even) {
+      background-color: blue;
+     }
+
     </style>
     <meta charset="utf-8" />
     <meta name="description" content="This is my website" />
+
+     
   </head>
   
   <body>
     
+
     <div id="first">
       <div id="second">
         <div id="third">
