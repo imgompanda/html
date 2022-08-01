@@ -8,7 +8,7 @@
     <link href="styles.css" rel="stylesheet"/>
     <style>
       * {
-        border: 2px solid black;
+        border: 2px sFolid black;
       }
 
 
@@ -25,7 +25,6 @@
         padding: 20px 10px;
         background-color: thistle;
         text-align: center;
-        color:blueviolet;
         margin: 50px 20px;
         display: flex;
         align-items: center;
@@ -33,13 +32,13 @@
         flex-direction: column;
       
         
-      }
+    } 
 
       form {
         height: 100px;
         width: 500px;
         position: absolute;
-        right: 0px;
+        
       }
       div {
         padding: 10px;
@@ -88,7 +87,7 @@
       }
       
      div:first-child {
-      background-color: brown;
+      background-color: white;
      }
 
      div:last-child {
@@ -97,14 +96,21 @@
 
      span {
       background-color: greenyellow;
+      padding: 5px;
+      border-radius: 10px;
      }
 
-     span:nth-child(5), 
-     span:nth-child(7),
-     span:nth-child(even) {
-      background-color: blue;
+     p span {
+      color: teal;
      }
 
+     div > span {
+      text-decoration: underline;
+     }
+
+     button:focus {
+      background-color: tomato;
+     }
     </style>
     <meta charset="utf-8" />
     <meta name="description" content="This is my website" />
@@ -112,8 +118,22 @@
      
   </head>
   
+ <button>hello</button>
+
   <body>
-    
+    <div>
+      <form>
+        <input type="text" placeholder="First name" />
+        <input type="text" placeholder="Last name" />
+        <input type="password" required placeholder="password" />
+      </form>
+      <span>
+        hello
+      </span>
+      <p>
+        언제가 <span> 코딩왕 </span>이 될 남자
+      </p>
+    </div>
 
     <div id="first">
       <div id="second">
