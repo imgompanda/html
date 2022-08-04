@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="KO">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CreatAnAccount</title>
+  </head>
+  <style></style>
+  <body>
+    <h1>Creat An Account</h1>
+    <div>
+      <form>
+        <label for="first name">First Name</label>
+        <input id="first name" type="text" required placeholder="First Name" />
+        <br />
+
+        <label for="last name">Last Name</label>
+        <input id="last name" type="text" required placeholder="Last Name" />
+        <br />
+
+        <label for="user name">User Name</label>
+        <input id="user name" type="text" required placeholder="User Name" />
+        <br />
+
+        <label for="password">Password</label>
+        <input
+          id="password"
+          minlength="10"
+          type="password"
+          required
+          placeholder="Password"
+        />
+        <br />
+
+        <label for="date">Birth Date</label>
+        <input id="date" type="date" required placeholder="date" /> <br />
+
+        <label for="happy">How happy are you?</label>
+        <input
+          id="happy"
+          type="range"
+          min="0"
+          max="100"
+          step="10"
+          list="steplist"
+        />
+        <br />
+        <datalist id="steplist">
+          <option>0</option>
+          <option>10</option>
+          <option>20</option>
+          <option>30</option>
+          <option>40</option>
+          <option>50</option>
+          <option>60</option>
+          <option>70</option>
+          <option>80</option>
+          <option>90</option>
+          <option>100</option>
+        </datalist>
+
+        <label for="color">What is your fav color?</label>
+        <input id="color" type="color" /> <br />
+
+        <input type="submit" value="Create Account" /> <br />
+      </form>
+    </div>
+  </body>
+</html>
